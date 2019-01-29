@@ -68,7 +68,9 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 10px;
-    font-size: 150%; 
+    font-size: 150%;
+    height:10vw;
+    
   }
   
   .header,
