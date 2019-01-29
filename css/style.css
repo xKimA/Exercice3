@@ -76,6 +76,11 @@ body {
     background-color: rgb(102, 0, 80);
   }
 
+  .footer{
+    background-image: url(../media/manos-gkikas-461337-unsplash.jpg);
+    
+  }
+
   
   .sidebar2 {
     background-color: rgb(255, 230, 0);
