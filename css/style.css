@@ -100,7 +100,7 @@ body {
 
 .header,
 .footer {
-  background-color: #660050;
+  background-color: rgba(250, 51, 44, 0.904);
 }
 
 .footer {
@@ -108,7 +108,7 @@ body {
 }
 
 .sidebar2 {
-  background-color: #ffe600;
+  background-color: rgba(250, 51, 44, 0.904);
   color: #444;
 }
 /*# sourceMappingURL=style.css.map */
