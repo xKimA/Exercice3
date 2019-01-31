@@ -1,90 +1,88 @@
 body {
-    margin: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .sidebar {
-          grid-area: sidebar;
-      }
-  
-      .sidebar2 {
-          grid-area: sidebar2;
-      }
-  
-      .content {
-          grid-area: content;
-      }
-  
-      .header {
-          grid-area: header;
-      }
-  
-      .footer {
-          grid-area: footer;
-      }
-  
-      .wrapper {
-          background-color: #fff;
-          color: #444;
-      }
-  
-    .wrapper {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-areas:
-       "header"
-       "sidebar"
-       "content"
-       "sidebar2"
-       "footer"
-    }
-  
-      @media only screen and (min-width: 500px)  {
-      .wrapper {
-  
-          grid-template-columns: 20% auto;
-          grid-template-areas:
-      "header   header"
-          "sidebar  content"
-          "sidebar2 sidebar2"
-          "footer   footer";
-      }
-      }
-  
-      @media only screen and (min-width: 600px)   {
-          .wrapper {
-        grid-gap: 20px;
-              grid-template-columns: 120px auto 120px;
-              grid-template-areas:
-        "header  header  header"
-              "sidebar content sidebar2"
-              "footer  footer  footer";
-              max-width: 600px;
-          }
-      }
-  
-  .box {
-    background-color: turquoise;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 150%;
-    height:10vw;
-    
-  }
-  
-  .header,
-  .footer {
-    background-color: rgb(102, 0, 80);
-  }
+  margin: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-  .footer{
-    background-image: url(../media/manos-gkikas-461337-unsplash.jpg);
-    
-  }
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+}
 
-  
-  .sidebar2 {
-    background-color: rgb(255, 230, 0);
-    color: #444;
+.sidebar2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sidebar2;
+}
+
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    -ms-grid-columns: 20% auto;
+        grid-template-columns: 20% auto;
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
   }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    grid-gap: 20px;
+    -ms-grid-columns: 120px auto 120px;
+        grid-template-columns: 120px auto 120px;
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+    max-width: 600px;
+  }
+}
+
+.box {
+  background-color: turquoise;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  height: 10vw;
+}
+
+.header,
+.footer {
+  background-color: #660050;
+}
+
+.footer {
+  background-image: url(../media/manos-gkikas-461337-unsplash.jpg);
+}
+
+.sidebar2 {
+  background-color: #ffe600;
+  color: #444;
+}
+/*# sourceMappingURL=style.css.map */
