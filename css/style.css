@@ -23,6 +23,10 @@ a:hover {
   background-color: #660050;
 }
 
+box-header:hover {
+  background-color: black;
+}
+
 body {
   margin: 40px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -93,7 +97,7 @@ body {
 .box {
   background-color: turquoise;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px;
   font-size: 150%;
   height: 10vw;
