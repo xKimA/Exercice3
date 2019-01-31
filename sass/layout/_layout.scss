@@ -13,6 +13,7 @@ body {
   
       .content {
           grid-area: content;
+          height: auto !important;
       }
   
       .header {
