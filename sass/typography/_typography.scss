@@ -1,0 +1,27 @@
+@import "../variables-site/colors";
+@import "../variables-site/_typography.scss";
+@import "../variables-site/_structure.scss";
+
+@mixin font-size($e) {
+	font-size: $e;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1.1);
+	font-weight: 300;
+	line-height: $font__line-height-body;
+
+	@media screen and (min-width: $query__small) {
+		@include font-size(1.25);
+	}
+}
+
+@import "headings";
+
+@import "copy";
