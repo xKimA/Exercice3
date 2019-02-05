@@ -404,7 +404,7 @@ body {
   }
   .menu a {
     border: none;
-    border-left: 1px solid white;
+    border-left: 3px dotted white;
     /*Propriété comme item flex - peut s'étirer en largeur*/
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
