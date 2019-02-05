@@ -44,6 +44,18 @@ body {
       }
   
     .wrapper {
+			/*Sa largeur est fixée à 100%*/
+			width: 100vw;
+			/*Propriété comme item flex - ne peut rétrécir*/
+			flex: 1 0 100%;
+			/*Conteneur flex en colonne pour ses enfants*/
+			// display: flex;
+			flex-flow: column nowrap;
+			overflow-x: hidden; overflow-y: auto;
+
+
+
+
       display: grid;
       grid-gap: 1em;
       grid-template-areas:
@@ -131,7 +143,7 @@ body {
         "header  header  header"
               "sidebar content sidebar2"
               "footer  footer  footer";
-              max-width: 600px;
+            /*  max-width: 600px;*/
           }
 
           .boutonBurger {
@@ -180,6 +192,7 @@ body {
 
   .footer{
     background-image: url(../media/manos-gkikas-461337-unsplash.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
   }
 
